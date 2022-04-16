@@ -1,0 +1,73 @@
+
+section {
+    border: 3px;
+    border-style: dotted;
+    border-color: red;
+    float: left;
+    padding: 1%;
+    box-sizing: border-box;
+    margin: 3%;
+	
+	text-align: center; 
+}
+
+
+
+/* Mobiles */
+[class*="col-"] {
+    font-size: 1em;
+    width: 94%;
+    background: lightcoral;
+}
+
+aside{
+	display: none;
+}
+article{
+	width: 100%;
+}
+nav>div{			
+		flex-basis: 100%;
+}
+
+
+/* Tablets */
+@media only screen and (min-width: 600px)   {
+    [class*="col-t-"]  {
+        font-size: 1.25em;
+        width: 44%;
+        background: yellow;
+    }
+    .col-d-3 {
+        width: 94%;
+    }
+	
+	article{
+		width: 80%;
+	}
+	aside{
+		display: block;
+	}
+	nav>div{			
+		flex-basis: 100%;
+	}
+}
+
+
+@media only screen and (min-width: 768px)   {
+    [class*="col-d-"] {
+        font-size: 1.5em;
+        width: 27%;
+        background-color: lightgreen;
+    }
+	article{
+		width: 80%;
+	}
+	aside{
+		display: block;
+	}
+	nav>div{			
+		flex-basis: 30%;
+	}
+	
+}

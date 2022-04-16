@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Lab 5</title>
+        <meta name="viewport" content="width=device-width">
+        <meta name="author" content="Sam Hill">
+        <link rel="stylesheet" href="css/garg.css">
+		<style>
+		*{
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		header{
+			padding: 5px;
+			font-weight: bold;
+			width: 100%;
+			height: 100px;
+			background-color: powderblue;
+		}
+		nav{
+			min-height: 40px;
+			width: 100%;
+			display: flex;					
+			flex-wrap: wrap;
+			background-color: linen;
+			align-items: center;
+			overflow: hidden;			
+		}
+		
+		nav>div{			
+			flex-grow: 1;
+			flex-shrink: 1;
+			text-align: center;			
+			
+		}
+		
+		article{		
+			padding: 5px;
+			font-weight: bold;
+			clear: left;
+			float: left;			
+			height: 200px;
+			background-color: tan;
+		}
+		aside{
+			padding: 5px;
+			font-weight: bold;
+			width: 20%;
+			float: left;
+			height: 200px;
+			background-color: lightsalmon;
+		}
+		footer{
+			padding: 5px;
+			font-weight: bold;
+			clear: both;
+			width: 100%;
+			height: 40px;
+			background-color: powderblue;
+		}
+		</style>
+    </head>
+
+    <body>
+		<header>
+			<p>Header</p>
+		</header>
+		<nav>
+			<div>Menu 1</div>
+			<div>Menu 2</div>
+			<div>Menu 3</div>
+		</nav>
+		<article>
+			<section class="col-d-1 col-t-1">
+				Feature 1
+			</section>
+			<section class="col-d-2 col-t-2">
+				Feature 2
+			</section>
+			<section class="col-d-3 col-t-3">
+				Feature 3
+			
+			</section>
+		</article>
+		<aside>
+			Sidebar
+		</aside>
+		<footer>
+			Footer
+		</footer>
+		
+    </body>
+
+</html>
